@@ -1,0 +1,9 @@
+{
+    "editor.fontLigatures": false,
+    "telemetry.telemetryLevel": "off",
+    "telemetry.editStats.enabled": false,
+    "microsoft-sovereign-cloud.customEnvironment": {
+        
+    }
+}
+

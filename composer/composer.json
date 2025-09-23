@@ -1,0 +1,17 @@
+{
+    "name": "josemar/composer",
+    "autoload": {
+        "psr-4": {
+            "Josemar\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marquesjosemar",
+            "email": "126707247+marquesjosemar@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.10"
+    }
+}
