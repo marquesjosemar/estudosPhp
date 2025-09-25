@@ -2,11 +2,6 @@
 
 require "conexao.php";
 
-$sql = $pdo->query("SELECT * FROM usuarios");
-$usuarios = $sql->fetchAll(PDO::FETCH_ASSOC);
-
-
-
 ?>
 
 
@@ -26,11 +21,19 @@ $usuarios = $sql->fetchAll(PDO::FETCH_ASSOC);
             <th>Email</th>
         </tr>
 
+            <!-- O CRUD READ ESTÁ NO ARQUIVO CONEXAO.PHP -->
         <?php foreach($usuarios as $usuario): ?>
             <tr>
                 <td><?php echo htmlspecialchars($usuario['id']); ?></td>
                 <td><?php echo htmlspecialchars($usuario['nome']); ?></td>
                 <td><?php echo htmlspecialchars($usuario['email']); ?></td>
+                <td>
+                    <a href="editar.php?id=<?= htmlspecialchars($usuario['id']); ?>">Editar </a>
+                    <a href="excluir.php?id=<?= htmlspecialchars($usuario['id']); ?>">Excluir</a>
+                </td>
+                
+            </tr>
+            
             </tr>
         <?php endforeach; ?>
     </table>
