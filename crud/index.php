@@ -29,7 +29,7 @@ require "conexao.php";
                 <td><?php echo htmlspecialchars($usuario['email']); ?></td>
                 <td>
                     <a href="editar.php?id=<?= htmlspecialchars($usuario['id']); ?>">Editar </a>
-                    <a href="excluir.php?id=<?= htmlspecialchars($usuario['id']); ?>">Excluir</a>
+                    <a href="excluir.php?id=<?= htmlspecialchars($usuario['id']); ?>" onclick=" return confirm('Tem certeza?')">Excluir</a>
                 </td>
                 
             </tr>
